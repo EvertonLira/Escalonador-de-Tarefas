@@ -1,0 +1,41 @@
+== Trabalho de Inteligencia Artificial ==
+
+Escalonamento de Tarefas
+
+
+
+O objetivo é utilizar o AG para encontrar a melhor distribuição de tarefas entre dois
+processadores de uma estrutura paralela, de acordo com um grafo de programa pré-
+especificado. Neste grafo, são especificadas: as tarefas a serem realizadas, a
+precedência entre as tarefas, o tempo de execução de cada tarefa e o tempo de
+comunicação quando duas tarefas estão alocadas em processadores diferentes. Por
+exemplo, o grafo da figura a seguir apresenta um programa composto de 18 tarefas
+chamado de Gauss 18.
+
+
+
+Utilizar o modelo do AG descrito no artigo “Algoritmos genéticos e Branch and
+Bound aplicados ao escalonamento de tarefas em multiprocessadores”:
+Aplicar o AG nos 2 grafos de programa apresentados no trabalho: Gauss 18 e
+Paralelo7.
+1- Realizar 100 execuções do AG para cada grafo, utilizando-se as mesmas
+configurações utilizadas no artigo:
+Gauss18: TP=100, prec=60%, pmut=30%, Torneio com Tour=2 e Nger= 200.
+Paralelo 7: TP=50, prec=60%, pmut=30%, Torneio com Tour=2 e Nger= 50.
+Registrar o percentual de convergência do AG em cada caso e o tempo de
+processamento.
+2- Investigar as seguintes variações no modelo do AG para escalonamento:
+- Método de seleção dos pais: (a) Torneio com Tour=3 (b) Roleta
+- Método de reinserção: Reinserção pura com 30% de Elitismo
+- Método de Crossover: PMX
+- Método de Mutação: manter 15% de mutação como original e 15% de mutação
+complementando-se 1 bit do indivíduo na parte que representa o processador.
+- Uma modificação a sua escolha.
+Investigue diferentes combinações dos métodos originais e das variações
+propostas acima e conclua qual é o melhor ambiente para o escalonamento do
+Paralelo7 e do Gauss18.
+3- Realizar 100 execuções do AG para cada grafo, utilizando-se as configurações
+do melhor ambiente.
+Registrar o percentual de convergência do AG em cada caso e o tempo de
+processamento.
+
